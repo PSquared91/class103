@@ -95,13 +95,19 @@ console.log(aVariable, otherVariable);
 const weekDays = 7;
 console.log(weekDays);
 
-weekDays = 10;
 console.log(weekDays);
 
 //Const daysInWeek
 const daysInWeek = 7;
 
 //Variable vacationDays
-let vacationDays = 4;
-let totalDays = 21;
+let vacationDays = 14;
+let totalDays = daysInWeek + vacationDays;
+
+console.log("One week plus my vacation days equals " + totalDays + "days in total.");
+
+vacationDays = 21;
+totalDays = daysInWeek + vacationDays;
+console.log("If I take" + vacationDays + "vacation days, that equals" + totalDays + "days in total.");
+
 
