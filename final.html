@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Dashboard</title>
+  <link rel="stylesheet" href="mystylefinal.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🌡️ Temperature Dashboard</h1>
+
+    <!-- Converter -->
+    <section class="card">
+      <h2>Convert a Temperature</h2>
+      <div class="btn-row">
+        <button id="btnCtoF">Celsius ➝ Fahrenheit</button>
+        <button id="btnFtoC">Fahrenheit ➝ Celsius</button>
+      </div>
+      <p id="output" aria-live="polite">Result will appear here</p>
+
+      <!-- Thermometer -->
+      <div class="thermo-wrap">
+        <div class="thermometer">
+          <div id="thermoFill" class="thermo-fill"></div>
+        </div>
+        <small>Thermometer reflects last Celsius value</small>
+      </div>
+    </section>
+
+    <!-- Conversion Table -->
+    <section class="card">
+      <h2>Conversion Table (0 to 100 °C)</h2>
+      <button id="btnTable">Generate Table</button>
+      <div id="tableArea"></div>
+    </section>
+  </main>
+
+  <script src="scripts/final.js"></script>
+</body>
+</html>
